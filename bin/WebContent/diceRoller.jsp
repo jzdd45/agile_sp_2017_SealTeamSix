@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Automatic die Roller</title>
   </head>
-  <%@ include file="assets/includes/navigation.jsp" %>
   <body>
     <form id="Player1">
       
