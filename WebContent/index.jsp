@@ -9,6 +9,7 @@
 	<div class="hero-unit">
 		<h1></h1>
 	</div>
+	<%@ include file="assets/includes/navigation.jsp" %>
 	<div class="container">
 	</div>
 	<hr>
