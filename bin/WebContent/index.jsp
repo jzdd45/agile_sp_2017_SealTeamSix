@@ -8,16 +8,17 @@
 </head>
 <body>
 	<header>
+		<div id="logo"></div>
 		<nav>
 			<ul>
-				<li><a href="index.jsp">Home</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">About</a></li>
+				<li><div id="homeImg"><a href="index.jsp"></a></div></li>
+				<li><div id="ContactImg"><a href="#"></a></div></li>
+				<li><div id="AboutImg"><a href="#"></a></div></li>
 			</ul>
 		</nav>
 	</header>
 	<section id="mainContent">
-		<h1>D & D</h1>
+		<h1></h1>
 	</section>
 </body>
 
