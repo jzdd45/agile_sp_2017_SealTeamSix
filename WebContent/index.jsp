@@ -1,17 +1,27 @@
 <!doctype html>
 <html>
 <head>
-	<title></title>
-	<meta name="description" content="">
+	<title>Dungeon and Dragons Character Generator</title>
+	<meta name="description" content="Dungeon and Dragons website for class">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> 
 </head>
 <body>
 <div class="container">
-	<div class="hero-unit">
-		<h1></h1>
-	</div>
+	<header>
+		<div id="logo"></div>
+		<nav>
+			<ul>
+				<li><div id="homeImg"><a href="index.jsp"></a></div></li>
+				<li><div id="ContactImg"><a href="#"></a></div></li>
+				<li><div id="AboutImg"><a href="#"></a></div></li>
+			</ul>
+		</nav>
+	</header>
 	<%@ include file="assets/includes/navigation.jsp" %>
-	<div class="container">
-	</div>
+	<section class="mainContent">
+		<h1></h1>
+	</section>
 	<hr>
 </div>
 </body>
