@@ -9,6 +9,9 @@
       
       <label>Die type:</label>
       <select id="die_type">
+        <option>D2</option>
+        <option>D3</option>
+      	<option>D4</option>
       	<option>D6</option>
 		<option>D8</option>
 		<option>D10</option>
@@ -16,6 +19,7 @@
 		<option>D20</option>
 		<option>D100</option>
 		<option>D1000</option>
+		<option>D10000</option>
 	  </select> 
       
       <label>Number of dice:</label>
@@ -71,6 +75,8 @@
 			<option>49</option>
 			<option>50</option>
       </select> 
+      
+      <input id="die_mod" type="number" name="quantity" min="-100" max="100">
 
       <button id="roll">Roll</button>
       

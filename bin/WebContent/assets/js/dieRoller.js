@@ -9,19 +9,23 @@ function randomNumberGenerator(dieTypeCalc, dieNumberCalc) {
   return dieResultsToReturn;
 }
 
-function diceSum(dieResultsCalc) {
+function diceSum(dieResultsCalc, dieModValue) {
   var numberOfResults = dieResultsCalc.length;
   var rollTotalCalc = 0;
   
   for (var index = 0; index < numberOfResults; index++) {
     rollTotalCalc += dieResultsCalc[index];
   }
+
+  rollTotalCalc += dieModValue;
+
   return rollTotalCalc;
 }
   
 function main() {
   var clearButton = document.getElementById("clear");
   var dieNumberField = document.getElementById("die_number");
+  var dieModField = document.getElementById("die_mod");
   var dieResultsCalc = [];
   var dieType = 0;  
   var inputDieTypeField = document.getElementById("die_type");
@@ -40,8 +44,24 @@ function main() {
     
     var dieNumber = dieNumberField.value;
     var inputDieType = inputDieTypeField.value;
+    var dieModValue = parseInt(dieModField.value, 10);
+    
+    if (dieModValue === null) {
+    	dieModValue = 0;
+    } else if (isNaN(dieModValue)) {
+    	dieModValue = 0;
+    }
 
     switch(inputDieType) {
+      case "D2":
+    	dieType = 2;
+    	break;
+      case "D3":
+    	dieType = 3;
+    	break;
+      case "D4":
+    	dieType = 4;
+    	break;
       case "D6":
         dieType = 6;
         break;
@@ -63,15 +83,20 @@ function main() {
       case "D1000":
         dieType = 1000;
         break;
+      case "D10000":
+    	dieType = 10000;
+    	break;
       default:
         dieType = 6;
     }
     
     dieResultsCalc = randomNumberGenerator(dieType, dieNumber);
     
-    rollTotal = diceSum(dieResultsCalc);
+    rollTotal = diceSum(dieResultsCalc, dieModValue);
     
     output += "<p>Roll " + rollCounter + ": <br>";
+    
+    output += dieNumber + inputDieType + ": ";
     
     for(var index = 0; index < dieResultsCalc.length; index++) {
       if (index === dieResultsCalc.length -1) {
@@ -80,7 +105,13 @@ function main() {
         output += dieResultsCalc[index] + ", ";
       }
     } 
-   
+  
+    if (dieModValue > 0) {
+        output += " </br>Mod: + " + dieModValue;
+    } else if (dieModValue < 0) {
+        output += " Mod: " + dieModValue;
+    }
+    
     output += " = " + rollTotal;
     
     output += "</p>";
