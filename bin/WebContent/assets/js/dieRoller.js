@@ -47,21 +47,21 @@ function main() {
     var dieModValue = parseInt(dieModField.value, 10);
     
     if (dieModValue === null) {
-    	dieModValue = 0;
+    dieModValue = 0;
     } else if (isNaN(dieModValue)) {
-    	dieModValue = 0;
+    dieModValue = 0;
     }
 
     switch(inputDieType) {
       case "D2":
-    	dieType = 2;
-    	break;
+    dieType = 2;
+    break;
       case "D3":
-    	dieType = 3;
-    	break;
+    dieType = 3;
+    break;
       case "D4":
-    	dieType = 4;
-    	break;
+    dieType = 4;
+    break;
       case "D6":
         dieType = 6;
         break;
@@ -84,8 +84,8 @@ function main() {
         dieType = 1000;
         break;
       case "D10000":
-    	dieType = 10000;
-    	break;
+    dieType = 10000;
+    break;
       default:
         dieType = 6;
     }
@@ -123,3 +123,4 @@ function main() {
 }
 
 main();
+

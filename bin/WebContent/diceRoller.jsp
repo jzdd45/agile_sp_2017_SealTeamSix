@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <title>Automatic die Roller</title>
-  </head>
-  <body>
-    <form id="Player1">
-      
-      <label>Die type:</label>
-      <select id="die_type">
-        <option>D2</option>
-        <option>D3</option>
-      	<option>D4</option>
-      	<option>D6</option>
-		<option>D8</option>
-		<option>D10</option>
-		<option>D12</option>
-		<option>D20</option>
-		<option>D100</option>
-		<option>D1000</option>
-		<option>D10000</option>
-	  </select> 
-      
-      <label>Number of dice:</label>
-      <select id="die_number">
-      <option>1</option>
+	<head>
+    	<meta charset="utf-8">
+    	<title>Automatic die Roller</title>
+ 	</head>
+	<body>
+		<form id="Player1">
+
+		<label>Die type:</label> <select id="die_type">
+			<option>D2</option>
+			<option>D3</option>
+			<option>D4</option>
+			<option>D6</option>
+			<option>D8</option>
+			<option>D10</option>
+			<option>D12</option>
+			<option>D20</option>
+			<option>D100</option>
+			<option>D1000</option>
+			<option>D10000</option>
+		</select> <label>Number of dice:</label> <select id="die_number">
+			<option>1</option>
 			<option>2</option>
 			<option>3</option>
 			<option>4</option>
@@ -74,17 +70,16 @@
 			<option>48</option>
 			<option>49</option>
 			<option>50</option>
-      </select> 
-      
-      <input id="die_mod" type="number" name="quantity" min="-100" max="100">
+		</select> <input id="die_mod" type="number" name="quantity"
+			min="-100" max="100">
 
-      <button id="roll">Roll</button>
-      
-      <button id="clear">Clear</button>
-      
-      <div id="output">Results:</div>
-      
-    </form>
-    <script src="assets/js/dieRoller.js"></script>
-  </body>
+		<button id="roll">Roll</button>
+
+		<button id="clear">Clear</button>
+
+		<div id="output">Results:</div>
+
+	</form>
+	<script src="assets/js/dieRoller.js"></script>
+</body>
 </html>
