@@ -78,3 +78,38 @@ nav > ul > li > div > a {
 	margin: 0px;
 	z-index: 2;
 }
+
+.featsH1 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: #ffffff;
+	width: 90%;
+	margin: 10px auto;
+	
+}
+
+.flex h2 {
+	text-decoration: underline;
+	letter-spacing: 0.05rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.flex ul {
+	list-style: square;
+}
+
+.flex > div {
+	border: 4px inset #ffffff;
+	padding: 5px;
+	flex-grow: 1;
+	width: 35%;
+	letter-spacing: .015rem;
+}

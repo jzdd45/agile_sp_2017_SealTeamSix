@@ -7,19 +7,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> 
 </head>
 <body>
+<div class="container">
 	<header>
 		<div id="logo"></div>
-		<nav>
-			<ul>
-				<li><div id="homeImg"><a href="index.jsp"></a></div></li>
-				<li><div id="ContactImg"><a href="#"></a></div></li>
-				<li><div id="AboutImg"><a href="#"></a></div></li>
-			</ul>
-		</nav>
+		<%@ include file="assets/includes/navigation.jsp" %>
 	</header>
-	<section id="mainContent">
+	<section class="mainContent">
 		<h1></h1>
 	</section>
+	<hr>
+</div>
 </body>
 
 </html>
