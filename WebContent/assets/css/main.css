@@ -102,6 +102,10 @@ nav > ul > li > div > a {
 	text-align: center;
 }
 
+.flex p {
+	margin: 10px;
+}
+
 .flex ul {
 	list-style: square;
 }
